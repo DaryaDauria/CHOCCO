@@ -646,7 +646,7 @@ img {
 
 .section__title {
   font-size: 2.7rem;
-  margin-bottom: 1.38rem;
+  margin-bottom: 4rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -673,7 +673,7 @@ img {
         margin-bottom: 0.5rem; } }
   .section__title--reviews {
     margin-bottom: 0; 
-  font-size: 2rem;}
+  }
 
 .section__desc {
   text-align: center;
@@ -1369,7 +1369,8 @@ bottom: 90%;}
       text-align: center;
       padding-right: 0; 
       font-size: 0.9rem;
-    margin-bottom: 1;} }
+    margin-bottom: 1;
+  } }
 
 .reviews__avtor {
   font-size: 0.9rem;
@@ -1419,6 +1420,7 @@ bottom: 90%;}
   object-fit: 100%; }
 
 .section__reviews {
+  padding-top: 4rem;
   height: 100%;
   bottom: -1.1rem;
   position: relative; }
@@ -1835,7 +1837,9 @@ bottom: 90%;}
 .modal__content {
   margin-bottom: 0.8rem;
   color: #000; }
-
+  .player-section {
+    padding-top: 5%;
+  }
 .player {
   position: relative;
   display: block;
@@ -1843,6 +1847,31 @@ bottom: 90%;}
   height: 100%; }
   .player.active .player__splash {
     display: none; }
+
+  
+    .paused 
+      .player__start {
+        background: #626262;
+        height: 18px;
+        width: 12px;
+        position: relative;
+        border: none;
+      }
+     .paused .player__start::before
+       {
+         content: "";
+       background: #61C4D9;
+          position: absolute;
+          height: 19px;
+          width: 4px;
+          left: 31%;
+          top: 1%;
+
+          background: #404040;
+        }
+    
+
+
 
   .player-section__container {
     padding: 0 15%;
@@ -1854,18 +1883,11 @@ bottom: 90%;}
       padding: 0 6.5%;
     }
   }
+
+  
    .player__elem {
      position: relative;
    }
-
-.paused .player__start {
-  background-image: url("../image/berries.png");
-  height: 18px;
-  width: 13px;
-  background-color: #3e3e3e;
-  border: none;
-
-}
 
 
 
@@ -1906,7 +1928,7 @@ bottom: 90%;}
   border: none;
   background-image: url("../image/play.png");
   height: 18px;
-  width: 13px;
+  width: 12px;
   background-color: #3e3e3e; }
 
 .player__duration {
