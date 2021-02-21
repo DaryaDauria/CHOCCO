@@ -13,7 +13,10 @@
   }
 }
 
-
+.product{ @include tablets {
+  display: flex;
+  flex-direction: column;
+}}
 
 .product__content-page {
  cursor: pointer;
@@ -23,6 +26,12 @@
   @include tablets {
     display: none;
   }
+
+  .product__page {
+    @include tablets {
+      padding: 0 16%;
+    }
+  }
   &:hover .dropdown__menu {
     visibility: visible;
       opacity: 1;
@@ -30,6 +39,7 @@
       transition: .8s;
     }
 }
+
 
 .product__content-img {
   margin-bottom: 1.1rem;
@@ -53,6 +63,11 @@ justify-content: center;
     font-size: 0.9rem;
     margin-bottom: 1rem;
   }
+}
+
+@include tablets {
+  height: 12rem;
+  width: 14rem;
 }
 
 .product__details {

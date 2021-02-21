@@ -19,7 +19,9 @@
   transform: translateX(-2.77rem);
   top: -1.66rem;
    left: 50%;
-  
+  @include tablets {
+    padding: 0 11%;
+  }
 
   }
 

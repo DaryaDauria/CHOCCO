@@ -9,6 +9,16 @@
 }
 .team-section {
   height: 100vh;
+  position: relative;
+  &::before {
+    content: url("../image/blue-berries.png");
+    position: absolute;
+    right: 1%;
+    bottom: 90%;
+    @include tablets {
+      content: none;
+    }
+  }
 }
 
 .team__title {
@@ -62,7 +72,7 @@
 }
 
 .team__avatar {
-
+height: 16rem;
   margin-bottom: 1.2rem;
 position: relative;
  @include tablets {

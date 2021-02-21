@@ -39,8 +39,8 @@
   height: 14.4rem;
 
   @include tablets{
-    width: 8.2rem;
-    height: 8.3rem;
+    width: 6.2rem;
+    height: 6.3rem;
     margin-top: 1.6rem;
     margin-bottom: 2rem;
   
@@ -75,6 +75,9 @@ text-align: start;
   font-weight: bold;
   margin-bottom: 1.2rem;
  color: #292929; 
+ @include tablets {
+   font-size: 1.3rem;
+ }
 }
 
 .reviews__text {
@@ -84,6 +87,8 @@ text-align: start;
   @include tablets {
   text-align: center;
   padding-right: 0;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
   }
 }
 

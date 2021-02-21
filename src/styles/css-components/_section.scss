@@ -19,7 +19,7 @@ height: 100%;
 
 .section__title{
   font-size: 2.7rem;
-  margin-bottom: 1.38rem;
+  margin-bottom: 4rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -90,7 +90,10 @@ margin-bottom: 2rem;
   &:before {
     content: url("../image/chocco2.png");
     position: absolute;
-   top: 22%;
+   top: 178%;
+   @include tablets {
+     content: none;
+   }
   }
 }
 
